@@ -211,14 +211,6 @@ header .hamburger .bar3 {
   margin-top: 70px;
   overflow: hidden;
 }
-.banner .img1,
-.banner .img2,
-.banner .img3 {
-  display: none;
-}
-.banner .group6 {
-  display: none;
-}
 .banner h1 {
   font-size: 35px;
   font-family: "baloo bold";
@@ -483,10 +475,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     top: 423px;
     left: 336px;
   }
-  .banner .img1,
-  .banner .img2,
-  .banner .img3 {
+  .banner .slider {
+    display: flex;
+  }
+  .banner .slider .img1,
+  .banner .slider .img2,
+  .banner .slider .img3 {
     display: block;
+    padding: 10px;
   }
   .banner h1 {
     text-align: left;
@@ -587,11 +583,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .banner img {
     width: 100%;
-  }
-  .banner .img1,
-  .banner .img2,
-  .banner .img3 {
-    display: block;
   }
   .subscribe .items button {
     width: 48%;
